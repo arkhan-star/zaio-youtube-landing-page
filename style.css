@@ -1,4 +1,43 @@
-* {
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 239px;
+    height: 100%;
+    float: left;
+}
+
+main {
+    display: grid;
+    gap: 16px;
+    padding: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* This will create as many columns as possible with a minimum width of 320px and a maximum width of 1fr (taking up available space) - Using this instead of flex wrap* /
+}
+
+.video-card {
+    flex: 1 1 320px;
+    max-width: 380px;
+}
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,13 +48,28 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-/* Navigation Bar */
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    min-height: calc(100vh - 56px);
+}
+
+aside {
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 #logo {
@@ -31,7 +85,7 @@ nav {
     justify-content: center;
 }
 
-#nav-right {
+.nav-right {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -86,11 +140,16 @@ aside {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 16px;
+    padding: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
-/* Header Section */
+.video-card {
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+} */
