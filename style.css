@@ -10,10 +10,15 @@ body {
 }
 
 nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
     display: flex;
-    flex-direction: row; 
+    align-items: center;
+    padding: 0 16px; 
     justify-content: space-between;
-
+    height: 56px;
+    background: white;
+    z-index: 1000; /* Ensure the nav bar stays on top of other content when scrolling */
 }
 
 .button-group {
@@ -24,21 +29,45 @@ nav {
 }
 
 .aside {
+    position: fixed;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    top: 56px; /* Position the aside below the nav bar */
     width: 239px;
-    height: 100%;
+    height: calc(100vh - 56px);
     float: left;
+    overflow-y: auto; /* Enable vertical scrolling for the aside section */
+    background: white;
+}
+
+aside::-webkit-scrollbar {
+  width: 8px;
+}
+aside::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 8px;
+}
+aside:hover::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.25);
 }
 
 main {
+    margin-left: 239px; /* Add left margin to main content to accommodate the fixed aside */
     display: grid;
     gap: 16px;
     padding: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* This will create as many columns as possible with a minimum width of 320px and a maximum width of 1fr (taking up available space) - Using this instead of flex wrap */
+    padding-top: 56px; /* Add top padding to main content to accommodate the fixed nav bar */
 }
 
+.main-content {
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* This will create as many columns as possible with a minimum width of 320px and a maximum width of 1fr (taking up available space) - Using this instead of flex wrap */
+    justify-content: flex-start; /* Align items to the start of the row */
+}
 /* Navigation Bar */
 
 #avatar img {
@@ -58,11 +87,18 @@ main {
 }
 
 .filter-bar {
+    position: sticky;
+    top: 56px; /* Position the filter bar below the nav bar */
     display: flex;
+    margin-left: 239px; /* Add left margin to filter bar to accommodate the fixed aside */
     gap: 12px;
-    width: 100%;
+    width: calc(100% - 239px);
     height: 56px;
-    padding: 8px 0;
+    padding: 8px 24px;
+    grid-column: span 3;
+    overflow-x: auto; /* Enable horizontal scrolling for the filter bar */
+    background-color: white;
+    z-index: 950; /* Ensure the filter bar stays on top of other content when scrolling */
 }
 
 .filter-bar button {
@@ -74,6 +110,7 @@ main {
     background-color: rgb(242, 242, 242);
     border-radius: 8px;
     line-height: 20px;
+    flex: 0 0 auto; /* Prevent buttons from shrinking and allow them to maintain their width */
 }
 
 .main-content {
@@ -86,122 +123,18 @@ main {
 }
 
 .video-card {
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.video-card:hover {
-  transform: scale(1.02);
-}
-
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: white;
-    font-family: 'Roboto', 'Arial', sans-serif;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-}
-
-.layout {
-    display: grid;
-    grid-template-columns: 230px 1fr;
-    min-height: calc(100vh - 56px);
-}
-
-aside {
-    height: calc(100vh - 56px);
-    overflow-y: auto;
-    background-color: white;
-    border-right: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-#logo {
-    padding: 18px 14px 18px 16px;
-}
-
-.nav-centre {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 732px;
-    height: 40px;
-    justify-content: center;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#create {
-    padding: 1px 6px;
-    height: 40px;
-    width: 100px;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#bell {
-    padding: 1px 6px;
-    height: 40px;
-    width: 40px;
-    border: 0;
-    background-color: white;
-}
-
-#avatar {
-    padding: 1px 6px;
-    border-radius: 50%;
-    overflow: hidden;
-    height: 32px;
-    width: 32px;
-}
-
-aside {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 230px;
-    height: 100%;
-    float: left;
-}
-
-.button-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-main {
-    display: grid;
-    gap: 16px;
-    padding: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-}
-
-.video-card {
-    width: 100%;
+    flex: 1 1 320px; /* Allow the video cards to grow and shrink, with a base width of 320px */
+    max-width: 430px; /* Set a maximum width for the video cards to prevent them from becoming too wide on larger screens */
     border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.short-card {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-} */
+    flex: 1 1 320px; /* Allow the short video cards to grow and shrink, with a base width of 320px */
+    max-width: 430px; /* Set a maximum width for the short video cards to prevent them from becoming too wide on larger screens */
+    border-radius: 12px;
+    gap: 15px;
+    cursor: pointer;
+}
