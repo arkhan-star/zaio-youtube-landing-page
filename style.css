@@ -1,3 +1,11 @@
+:root{ /* It was better to create CSS variables for the dimensions used in the layout to make it easier to maintain and update the styles in the future. */
+  --nav-h: 56px;
+  --chips-h: 56px;
+  --sidebar-w: 239px;
+  --gap: 16px;
+  --page-pad: 24px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +14,7 @@
 }
 
 body {
-    margin: 0;
+    height: 100vh;
 }
 
 nav {
@@ -14,9 +22,9 @@ nav {
     top: 0; left: 0; right: 0;
     display: flex;
     align-items: center;
-    padding: 0 16px; 
+    padding: 0 var(--gap); 
     justify-content: space-between;
-    height: 56px;
+    height: var(--nav-h);
     background: white;
     z-index: 1000; /* Ensure the nav bar stays on top of other content when scrolling */
 }
@@ -33,9 +41,9 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    top: 56px; /* Position the aside below the nav bar */
-    width: 239px;
-    height: calc(100vh - 56px);
+    top: var(--nav-h); /* Position the aside below the nav bar */
+    width: var(--sidebar-w);
+    height: calc(100vh - var(--nav-h));
     float: left;
     overflow-y: auto; /* Enable vertical scrolling for the aside section */
     background: white;
@@ -53,18 +61,18 @@ aside:hover::-webkit-scrollbar-thumb {
 }
 
 main {
-    margin-left: 239px; /* Add left margin to main content to accommodate the fixed aside */
+    margin-left: var(--sidebar-w); /* Add left margin to main content to accommodate the fixed aside */
     display: grid;
-    gap: 16px;
-    padding: 24px;
-    padding-top: 56px; /* Add top padding to main content to accommodate the fixed nav bar */
+    gap: var(--gap);
+    padding: var(--page-pad);
+    padding-top: var(--nav-h); /* Add top padding to main content to accommodate the fixed nav bar */
 }
 
 .main-content {
-    padding-top: 24px;
+    padding-top: var(--page-pad);
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: var(--gap);
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* This will create as many columns as possible with a minimum width of 320px and a maximum width of 1fr (taking up available space) - Using this instead of flex wrap */
     justify-content: flex-start; /* Align items to the start of the row */
 }
@@ -88,13 +96,13 @@ main {
 
 .filter-bar {
     position: sticky;
-    top: 56px; /* Position the filter bar below the nav bar */
+    top: var(--nav-h); /* Position the filter bar below the nav bar */
     display: flex;
-    margin-left: 239px; /* Add left margin to filter bar to accommodate the fixed aside */
+    margin-left: var(--sidebar-w); /* Add left margin to filter bar to accommodate the fixed aside */
     gap: 12px;
-    width: calc(100% - 239px);
-    height: 56px;
-    padding: 8px 24px;
+    width: calc(100% - var(--sidebar-w));
+    height: var(--chips-h);
+    padding: 8px var(--page-pad);
     grid-column: span 3;
     overflow-x: auto; /* Enable horizontal scrolling for the filter bar */
     background-color: white;
@@ -128,6 +136,23 @@ main {
     border-radius: 12px;
     cursor: pointer;
 
+}
+
+.thumbnail img {
+    width: 528.312px;
+    height: 297.172px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    gap: 15px;
+    flex-shrink: 0; /* Prevent the thumbnail from shrinking when the video card is resized */
+}
+
+.channel-avatar {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
 }
 
 .short-card {
