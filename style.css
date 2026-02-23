@@ -131,9 +131,9 @@ nav {
     gap: 6px;
     height: 36px;
     padding: 0 16px;
-    border: 1px solid rgba(0,0,0,0.1) !important;
+    border: 1px solid rgba(0,0,0,0.1) ;
     border-radius: 18px;
-    background: #f2f2f2 !important;
+    background: #f2f2f2 ;
     font-size: 14px;
     font-weight: 500;
     white-space: nowrap;
@@ -192,8 +192,8 @@ nav {
 }
 
 .sidebar-item.active{
-  background: rgba(0,0,0,0.08);
-  font-weight: 500;
+    background: rgba(0,0,0,0.08);
+    font-weight: 500;
 }
 
 .aside-item img {
@@ -246,12 +246,17 @@ nav {
 
 footer {
     display: flex;
-    gap: 40px;
+    gap: 12px;
     padding: 20px var(--page-pad);
     flex-wrap: wrap;
     color: rgb(96,96,96);
-    text-decoration-line: none;
     font-size: 13px;
+}
+
+footer a {
+    color: rgb(96,96,96);
+    text-decoration: none;
+    font-weight: 500;
 }
 
 /* Filter Bar */
@@ -277,9 +282,11 @@ footer {
     height: 40px;
     border: none;
     background-color: rgb(242, 242, 242);
+    white-space: nowrap;
     border-radius: 8px;
     line-height: 20px;
     flex: 0 0 auto; /* Prevent buttons from shrinking and allow them to maintain their width */
+    cursor: pointer;
 }
 
 /* Main Content Area */
@@ -315,15 +322,42 @@ main {
     max-width: 430px; /* Set a maximum width for the video cards to prevent them from becoming too wide on larger screens */
     border-radius: 12px;
     cursor: pointer;
+}
 
+.video-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.thumbnail {
+    position: relative;
 }
 
 .thumbnail img {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    border-radius: 12px 12px 0 0;
+    border-radius: 12px;
     display: block;
+}
+
+.video-info {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 0;
+    gap: 12px;
 }
 
 .channel-avatar {
@@ -331,7 +365,24 @@ main {
     height: 36px;
     object-fit: cover;
     border-radius: 50%;
-    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.video-meta h3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.video-meta p {
+    font-size: 12px;
+    color: #606060;
+    line-height: 18px;
 }
 
 .short-card {
