@@ -34,6 +34,44 @@ nav {
     flex-direction: column;
     gap: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+}
+
+.aside-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background 0.2s ease;
+}
+
+.aside-item:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.sidebar-item.active{
+  background: rgba(0,0,0,0.08);
+  font-weight: 500;
+}
+
+.aside-item img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.button-group h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(15, 15, 15);
+    padding: 0 12px;
 }
 
 .aside {
@@ -42,22 +80,24 @@ nav {
     flex-direction: column;
     gap: 20px;
     top: var(--nav-h); /* Position the aside below the nav bar */
+    left: 0;
     width: var(--sidebar-w);
     height: calc(100vh - var(--nav-h));
-    float: left;
     overflow-y: auto; /* Enable vertical scrolling for the aside section */
     background: white;
+    z-index: 900;
 }
 
-aside::-webkit-scrollbar {
-  width: 8px;
+.aside::-webkit-scrollbar {
+    width: 8px;
 }
-aside::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 8px;
+.aside::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 8px;
 }
-aside:hover::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.25);
+.aside:hover::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.25);
+
 }
 
 main {
@@ -126,8 +166,8 @@ main {
 }
 
 .video-link {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .video-card {
