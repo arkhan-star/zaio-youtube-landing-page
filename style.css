@@ -41,14 +41,15 @@ nav {
 }
 
 .nav-left button {
-    align-items: center;
+    vertical-align: middle;
     border: none;
     padding: 8px;
     background-color: white;
 }
 
 .nav-left .logo {
-    height: 20px;
+    vertical-align: middle;
+    padding-left: 14px;
 }
 
 .nav-centre {
@@ -186,13 +187,19 @@ nav {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 8px 12px;
+    width: 204px;
+    height: 40px;
+    padding: 0 12px;
     border-radius: 10px;
     text-decoration: none;
     color: black;
     font-size: 14px;
     font-weight: 400;
     transition: background 0.2s ease;
+}
+
+.button-group span {
+    padding-left: 8px;
 }
 
 .aside-item:hover {
@@ -224,7 +231,7 @@ nav {
     font-size: 16px;
     font-weight: 500;
     color: rgb(15, 15, 15);
-    padding: 0 12px;
+    padding: 10px 12px;
 }
 
 .aside {
@@ -285,16 +292,16 @@ footer a {
     gap: 12px;
     height: var(--chips-h);
     padding: 8px var(--page-pad);
-    overflow-x: auto; /* Enable horizontal scrolling for the filter bar */
+    #overflow-x: auto; /* Enable horizontal scrolling for the filter bar */
     background-color: white;
     z-index: 950; /* Ensure the filter bar stays on top of other content when scrolling */
 }
 
 .filter-bar button {
     font-size: 14px;
-    font-weight: 500;
-    padding: 1px 6px;
-    height: 40px;
+    font-weight: 600;
+    padding: 0 12px;
+    height: 32px;
     border: none;
     background-color: rgb(242, 242, 242);
     white-space: nowrap;
