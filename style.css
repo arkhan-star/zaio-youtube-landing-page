@@ -187,7 +187,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 12px;
-    width: 204px;
     height: 40px;
     padding: 0 12px;
     border-radius: 10px;
@@ -196,6 +195,13 @@ nav {
     font-size: 14px;
     font-weight: 400;
     transition: background 0.2s ease;
+    overflow: hidden;
+}
+
+.aside-item span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .button-group span {
@@ -222,7 +228,7 @@ nav {
 .button-group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px 12px;
 }
@@ -326,7 +332,7 @@ main {
     padding-top: var(--page-pad);
     display: grid;
     gap: var(--gap);
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* This will create as many columns as possible with a minimum width of 320px and a maximum width of 1fr (taking up available space) - Using this instead of flex wrap */
+    grid-template-columns: repeat(3, 1fr); /* This will create three equal columns */
     justify-content: flex-start; /* Align items to the start of the row */
 }
 
@@ -341,7 +347,6 @@ main {
 
 .video-card {
     flex: 1 1 320px; /* Allow the video cards to grow and shrink, with a base width of 320px */
-    max-width: 430px; /* Set a maximum width for the video cards to prevent them from becoming too wide on larger screens */
     border-radius: 12px;
     cursor: pointer;
 }
