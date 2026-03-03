@@ -514,6 +514,10 @@ main {
         padding: 0 8px;
     }
 
+    .nav-left .logo {
+        display: none;
+    }
+
     .nav-centre {
         max-width: none;
         margin: 0;
@@ -539,5 +543,9 @@ main {
 
     main {
         margin-left: 0;
+    }
+
+    .short-card .video-link {
+        flex: 1 1 100%; /* Make short video cards take full width on mobile */
     }
 }
