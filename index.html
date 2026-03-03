@@ -1,331 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube | South Africa</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Youtube | South Africa</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 
-</head>
-    <body>
-        <nav>
-            <div class="nav-left">
-                <button><img src="./assets/menu.svg" alt="Menu Icon"></button>
-                <img src="./assets/logo.svg" alt="Youtube Africa Logo" class="logo">
-            </div>
-            <div class="nav-centre">
-                <div id="search-bar">
-                    <input type="search" id="search" placeholder="Search"/>
-                    <button><img src="./assets/magnifying-glass.svg" alt="Magnifying Glass Icon"></button>
-                    <button><img src="./assets/mic.svg" alt="Push To Talk Icon"></button>
+    </head>
+        <body>
+            <nav>
+                <div class="nav-left">
+                    <button><img src="./assets/menu.svg" alt="Menu Icon"></button>
+                    <img src="./assets/logo.svg" alt="Youtube Africa Logo" class="logo">
                 </div>
-            </div>
-            <div class="nav-right">
-                <button id="create"><img src="./assets/plus.svg" alt="Create"> Create</button>
-                <button id="bell"><img src="./assets/bell.svg" alt="Notifications Bell Icon"><span class="badge">9+</span></button>
-                <button id="avatar"><img src="./assets/profile.jpg" alt="User Profile Icon"></button>
-            </div>
-        </nav>
-        <div class="filter-bar" role="tablist" aria-label="Video Categories">
-            <button role="tab" aria-selected="false">All</button>
-            <button role="tab" aria-selected="false">Music</button>
-            <button role="tab" aria-selected="false">Playlists</button>
-            <button role="tab" aria-selected="false">Audio mixing</button>
-            <button role="tab" aria-selected="false">Mixes</button>
-            <button role="tab" aria-selected="false">African Music</button>
-            <button role="tab" aria-selected="false">Nightclub</button>
-            <button role="tab" aria-selected="false">Drake</button>
-            <button role="tab" aria-selected="false">Live</button>
-            <button role="tab" aria-selected="false">Jazz Rap</button>
-            <button role="tab" aria-selected="false">Albums</button>
-            <button role="tab" aria-selected="false">Computer program</button>
-            <button role="tab" aria-selected="false">Recently uploaded</button>
-            <button role="tab" aria-selected="false">Watched</button>
-            <button role="tab" aria-selected="false">New to you</button>
-        </div>
-        <div class="aside">
-            <aside>
-                <section class="button-group">
-                    <a href="https://www.youtube.com/" class="aside-item">
-                        <img src="./assets/home.svg" alt="Home Icon">
-                        <span>Home</span>
-                    </a>
-                    <a href="https://www.youtube.com/shorts" class="aside-item">
-                        <img src="./assets/shorts.svg" alt="Shorts Icon">
-                        <span>Shorts</span>
-                    </a>
-                </section>
-
-                <section class="button-group">
-                    <h2>Subscriptions <img src="./assets/chevron.svg" alt="Chevron Icon" class="chevron-icon"></h2>
-                        <a href="https://www.youtube.com/@Jessicamashaba20" class="aside-item">
-                            <img src="./assets/subscription-1.jpg" alt="Jessica Mashaba Channel Avatar">
-                            <span>Jessica Mashaba</span>
-                        </a>
-                        <a href="https://www.youtube.com/@aprtmentlife" class="aside-item">
-                            <img src="./assets/subscription-2.jpg" alt="Apartment Life Channel Avatar">
-                            <span>aprtment life</span>
-                        </a>
-                        <a href="https://www.youtube.com/@chrisbrown" class="aside-item">
-                            <img src="./assets/subscription-3.jpg" alt="Chris Brown Channel Avatar">
-                            <span>Chris Brown</span>
-                        </a>
-                        <a href="https://www.youtube.com/@tyla" class="aside-item">
-                            <img src="./assets/subscription-4.jpg" alt="Tyla Channel Avatar">
-                            <span>Tyla</span>
-                        </a>
-                        <a href="https://www.youtube.com/@hellovee" class="aside-item">
-                            <img src="./assets/subscription-5.jpg" alt="Hello Vee Channel Avatar">
-                            <span>Hello Vee</span>
-                        </a>
-                        <a href="https://www.youtube.com/@amandapar" class="aside-item">
-                            <img src="./assets/subscription-6.jpg" alt="Amanda Par Channel Avatar">
-                            <span>Amanda Par</span>
-                        </a>
-                        <a href="https://www.youtube.com/@javascriptmastery" class="aside-item">
-                            <img src="./assets/subscription-7.jpg" alt="JavaScript Mastery Channel Avatar">
-                            <span>JavaScript Mastery</span>
-                        </a>
-                </section>
-
-                <section class="button-group">
-                    <h2>You <img src="./assets/chevron.svg" alt="Chevron Icon" class="chevron-icon"></h2>
-                    <a href="https://www.youtube.com/feed/history" class="aside-item">
-                        <img src="./assets/history.svg" alt="History Icon">
-                        <span>History</span>
-                    </a>
-                    <a href="https://www.youtube.com/feed/playlists" class="aside-item">
-                        <img src="./assets/playlists.svg" alt="Playlists Icon">
-                        <span>Playlists</span>
-                    </a>
-                    <a href="https://www.youtube.com/playlist?list=WL" class="aside-item">
-                        <img src="./assets/watch-later.svg" alt="Watch Later Icon">
-                        <span>Watch Later</span>
-                    </a>
-                    <a href="https://www.youtube.com/playlist?list=LL" class="aside-item">
-                        <img src="./assets/liked-videos.svg" alt="Liked Videos Icon">
-                        <span>Liked Videos</span>
-                    </a>
-                    <a href="https://studio.youtube.com/channel/UCu_6FUZ0q8z3XMWNuCc4cVw/videos" class="aside-item">
-                        <img src="./assets/your-videos.svg" alt="Your Videos Icon">
-                        <span>Your Videos</span>
-                    </a>
-                    <a href="https://www.youtube.com/feed/downloads" class="aside-item">
-                        <img src="./assets/downloads.svg" alt="Downloads Icon">
-                        <span>Downloads</span>
-                    </a>
-                </section>
-
-                <section class="button-group">
-                    <h2>Explore <img src="./assets/chevron.svg" alt="Chevron Icon" class="chevron-icon"></h2>
-                    <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" class="aside-item">
-                        <img src="./assets/music.svg" alt="Music Icon">
-                        <span>Music</span>
-                    </a>
-                    <a href="https://www.youtube.com/gaming" class="aside-item">
-                        <img src="./assets/gaming.svg" alt="Gaming Icon">
-                        <span>Gaming</span>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw" class="aside-item">
-                        <img src="./assets/news.svg" alt="News Icon">
-                        <span>News</span>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw" class="aside-item">
-                        <img src="./assets/sport.svg" alt="Sports Icon">
-                        <span>Sports</span>
-                    </a>
-                    <a href="https://www.youtube.com/podcasts" class="aside-item">
-                        <img src="./assets/podcasts.svg" alt="Podcasts Icon">
-                        <span>Podcasts</span>
-                    </a>
-                </section>
-                <section class="button-group">
-                    <h2>More from YouTube</h2>
-                    <a href="https://studio.youtube.com/" class="aside-item">
-                        <img src="./assets/yt-studio.svg" alt="Youtube Studio Icon">
-                        <span>Youtube Studio</span>
-                    </a>
-                    <a href="https://music.youtube.com/" class="aside-item">
-                        <img src="./assets/yt-music.svg" alt="Youtube Music Icon">
-                        <span>Youtube Music</span>
-                    </a>
-                    <a href="https://www.youtubekids.com/?source=youtube_web" class="aside-item">
-                        <img src="./assets/yt-kids.svg" alt="Youtube Kids Icon">
-                        <span>Youtube Kids</span>
-                    </a>
-                </section>
-                <section class="button-group">
-                    <a href="https://www.youtube.com/account" class="aside-item">
-                        <img src="./assets/settings.svg" alt="Settings Icon">
-                        <span>Settings</span>
-                    </a>
-                    <a href="https://www.youtube.com/reporthistory" class="aside-item">
-                        <img src="./assets/report.svg" alt="Report Icon">
-                        <span>Report history</span>
-                    </a>
-                    <a href="https://support.google.com/youtube/?hl=en#topic=9257498" class="aside-item">
-                        <img src="./assets/help.svg" alt="Help Icon">
-                        <span>Help</span>
-                    </a>
-                    <a href="https://support.google.com/youtube/answer/4347644?hl=en&co=GENIE.Platform%3DDesktop" class="aside-item">
-                        <img src="./assets/feedback.svg" alt="Feedback Icon">
-                        <span>Feedback</span>
-                    </a>
-                </section>
-                <footer>
-                    <ul>
-                        <a href="https://www.youtube.com/about/">About</a>
-                        <a href="https://www.youtube.com/about/press/">Press</a>
-                        <a href="https://www.youtube.com/about/copyright/">Copyright</a>
-                        <a href="https://www.youtube.com/t/contact_us/">Contact us</a>
-                        <a href="https://www.youtube.com/creators/">Creator</a>
-                        <a href="https://www.youtube.com/advertise/">Advertise</a>
-                        <a href="https://developers.google.com/youtube">Developers</a>
-                    </ul>
-                    <ul>
-                        <a href="https://www.youtube.com/t/terms">Terms</a>
-                        <a href="https://www.youtube.com/t/privacy">Privacy</a>
-                        <a href="https://www.youtube.com/about/policies/">Policy & Safety</a>
-                        <a href="https://www.youtube.com/howyoutubeworks">How YouTube works</a>
-                        <a href="https://www.youtube.com/new">Test new features</a>
-                    </ul>
-                </footer>
-                <div class="copyright">
-                    <p>© 2026 FakeTube by Al-Ridhaa Khan</p>
+                <div class="nav-centre">
+                    <div id="search-bar">
+                        <input type="search" id="search" placeholder="Search"/>
+                        <button><img src="./assets/magnifying-glass.svg" alt="Magnifying Glass Icon"></button>
+                        <button><img src="./assets/mic.svg" alt="Push To Talk Icon"></button>
+                    </div>
                 </div>
-            </aside>
-        </div>
-        <main>
-            <div class="main-content">
-                <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
-                    <div class="video-card">
-                        <div class="thumbnail">
-                        <img src="https://i.ytimg.com/vi/DWiZvLlj5U8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCSEZR7KXMBL9QGrUxpGAOqpd7MDw" alt="Video Thumbnail">
-                        <span class="duration">12:35</span>
+                <div class="nav-right">
+                    <button id="create"><img src="./assets/plus.svg" alt="Create"> Create</button>
+                    <button id="bell"><img src="./assets/bell.svg" alt="Notifications Bell Icon"><span class="badge">9+</span></button>
+                    <button id="avatar"><img src="./assets/profile.jpg" alt="User Profile Icon"></button>
+                </div>
+            </nav>
+            <div class="filter-bar" role="tablist" aria-label="Video Categories">
+                <button role="tab" aria-selected="false">All</button>
+                <button role="tab" aria-selected="false">Music</button>
+                <button role="tab" aria-selected="false">Playlists</button>
+                <button role="tab" aria-selected="false">Audio mixing</button>
+                <button role="tab" aria-selected="false">Mixes</button>
+                <button role="tab" aria-selected="false">African Music</button>
+                <button role="tab" aria-selected="false">Nightclub</button>
+                <button role="tab" aria-selected="false">Drake</button>
+                <button role="tab" aria-selected="false">Live</button>
+                <button role="tab" aria-selected="false">Jazz Rap</button>
+                <button role="tab" aria-selected="false">Albums</button>
+                <button role="tab" aria-selected="false">Computer program</button>
+                <button role="tab" aria-selected="false">Recently uploaded</button>
+                <button role="tab" aria-selected="false">Watched</button>
+                <button role="tab" aria-selected="false">New to you</button>
+            </div>
+            <div class="aside">
+                <aside>
+                    <section class="button-group">
+                        <a href="https://www.youtube.com/" class="aside-item">
+                            <img src="./assets/home.svg" alt="Home Icon">
+                            <span>Home</span>
+                        </a>
+                        <a href="https://www.youtube.com/shorts" class="aside-item">
+                            <img src="./assets/shorts.svg" alt="Shorts Icon">
+                            <span>Shorts</span>
+                        </a>
+                    </section>
+
+                    <section class="button-group">
+                        <h2>Subscriptions <img src="./assets/chevron.svg" alt="Chevron Icon" class="chevron-icon"></h2>
+                            <a href="https://www.youtube.com/@Jessicamashaba20" class="aside-item">
+                                <img src="./assets/subscription-1.jpg" alt="Jessica Mashaba Channel Avatar">
+                                <span>Jessica Mashaba</span>
+                            </a>
+                            <a href="https://www.youtube.com/@aprtmentlife" class="aside-item">
+                                <img src="./assets/subscription-2.jpg" alt="Apartment Life Channel Avatar">
+                                <span>aprtment life</span>
+                            </a>
+                            <a href="https://www.youtube.com/@chrisbrown" class="aside-item">
+                                <img src="./assets/subscription-3.jpg" alt="Chris Brown Channel Avatar">
+                                <span>Chris Brown</span>
+                            </a>
+                            <a href="https://www.youtube.com/@tyla" class="aside-item">
+                                <img src="./assets/subscription-4.jpg" alt="Tyla Channel Avatar">
+                                <span>Tyla</span>
+                            </a>
+                            <a href="https://www.youtube.com/@hellovee" class="aside-item">
+                                <img src="./assets/subscription-5.jpg" alt="Hello Vee Channel Avatar">
+                                <span>Hello Vee</span>
+                            </a>
+                            <a href="https://www.youtube.com/@amandapar" class="aside-item">
+                                <img src="./assets/subscription-6.jpg" alt="Amanda Par Channel Avatar">
+                                <span>Amanda Par</span>
+                            </a>
+                            <a href="https://www.youtube.com/@javascriptmastery" class="aside-item">
+                                <img src="./assets/subscription-7.jpg" alt="JavaScript Mastery Channel Avatar">
+                                <span>JavaScript Mastery</span>
+                            </a>
+                    </section>
+
+                    <section class="button-group">
+                        <h2>You <img src="./assets/chevron.svg" alt="Chevron Icon" class="chevron-icon"></h2>
+                        <a href="https://www.youtube.com/feed/history" class="aside-item">
+                            <img src="./assets/history.svg" alt="History Icon">
+                            <span>History</span>
+                        </a>
+                        <a href="https://www.youtube.com/feed/playlists" class="aside-item">
+                            <img src="./assets/playlists.svg" alt="Playlists Icon">
+                            <span>Playlists</span>
+                        </a>
+                        <a href="https://www.youtube.com/playlist?list=WL" class="aside-item">
+                            <img src="./assets/watch-later.svg" alt="Watch Later Icon">
+                            <span>Watch Later</span>
+                        </a>
+                        <a href="https://www.youtube.com/playlist?list=LL" class="aside-item">
+                            <img src="./assets/liked-videos.svg" alt="Liked Videos Icon">
+                            <span>Liked Videos</span>
+                        </a>
+                        <a href="https://studio.youtube.com/channel/UCu_6FUZ0q8z3XMWNuCc4cVw/videos" class="aside-item">
+                            <img src="./assets/your-videos.svg" alt="Your Videos Icon">
+                            <span>Your Videos</span>
+                        </a>
+                        <a href="https://www.youtube.com/feed/downloads" class="aside-item">
+                            <img src="./assets/downloads.svg" alt="Downloads Icon">
+                            <span>Downloads</span>
+                        </a>
+                    </section>
+
+                    <section class="button-group">
+                        <h2>Explore <img src="./assets/chevron.svg" alt="Chevron Icon" class="chevron-icon"></h2>
+                        <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" class="aside-item">
+                            <img src="./assets/music.svg" alt="Music Icon">
+                            <span>Music</span>
+                        </a>
+                        <a href="https://www.youtube.com/gaming" class="aside-item">
+                            <img src="./assets/gaming.svg" alt="Gaming Icon">
+                            <span>Gaming</span>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw" class="aside-item">
+                            <img src="./assets/news.svg" alt="News Icon">
+                            <span>News</span>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw" class="aside-item">
+                            <img src="./assets/sport.svg" alt="Sports Icon">
+                            <span>Sports</span>
+                        </a>
+                        <a href="https://www.youtube.com/podcasts" class="aside-item">
+                            <img src="./assets/podcasts.svg" alt="Podcasts Icon">
+                            <span>Podcasts</span>
+                        </a>
+                    </section>
+                    <section class="button-group">
+                        <h2>More from YouTube</h2>
+                        <a href="https://studio.youtube.com/" class="aside-item">
+                            <img src="./assets/yt-studio.svg" alt="Youtube Studio Icon">
+                            <span>Youtube Studio</span>
+                        </a>
+                        <a href="https://music.youtube.com/" class="aside-item">
+                            <img src="./assets/yt-music.svg" alt="Youtube Music Icon">
+                            <span>Youtube Music</span>
+                        </a>
+                        <a href="https://www.youtubekids.com/?source=youtube_web" class="aside-item">
+                            <img src="./assets/yt-kids.svg" alt="Youtube Kids Icon">
+                            <span>Youtube Kids</span>
+                        </a>
+                    </section>
+                    <section class="button-group">
+                        <a href="https://www.youtube.com/account" class="aside-item">
+                            <img src="./assets/settings.svg" alt="Settings Icon">
+                            <span>Settings</span>
+                        </a>
+                        <a href="https://www.youtube.com/reporthistory" class="aside-item">
+                            <img src="./assets/report.svg" alt="Report Icon">
+                            <span>Report history</span>
+                        </a>
+                        <a href="https://support.google.com/youtube/?hl=en#topic=9257498" class="aside-item">
+                            <img src="./assets/help.svg" alt="Help Icon">
+                            <span>Help</span>
+                        </a>
+                        <a href="https://support.google.com/youtube/answer/4347644?hl=en&co=GENIE.Platform%3DDesktop" class="aside-item">
+                            <img src="./assets/feedback.svg" alt="Feedback Icon">
+                            <span>Feedback</span>
+                        </a>
+                    </section>
+                    <footer>
+                        <ul>
+                            <a href="https://www.youtube.com/about/">About</a>
+                            <a href="https://www.youtube.com/about/press/">Press</a>
+                            <a href="https://www.youtube.com/about/copyright/">Copyright</a>
+                            <a href="https://www.youtube.com/t/contact_us/">Contact us</a>
+                            <a href="https://www.youtube.com/creators/">Creator</a>
+                            <a href="https://www.youtube.com/advertise/">Advertise</a>
+                            <a href="https://developers.google.com/youtube">Developers</a>
+                        </ul>
+                        <ul>
+                            <a href="https://www.youtube.com/t/terms">Terms</a>
+                            <a href="https://www.youtube.com/t/privacy">Privacy</a>
+                            <a href="https://www.youtube.com/about/policies/">Policy & Safety</a>
+                            <a href="https://www.youtube.com/howyoutubeworks">How YouTube works</a>
+                            <a href="https://www.youtube.com/new">Test new features</a>
+                        </ul>
+                    </footer>
+                    <div class="copyright">
+                        <p>© 2026 FakeTube by Al-Ridhaa Khan</p>
+                    </div>
+                </aside>
+            </div>
+            <main>
+                <div class="main-content">
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                                <img src="https://i.ytimg.com/vi/DWiZvLlj5U8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCSEZR7KXMBL9QGrUxpGAOqpd7MDw" alt="Video Thumbnail">
+                                <span class="duration">12:35</span>
+                            </div>
+
+                            <div class="video-info">
+                                <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                                <div class="video-meta">
+                                    <h3>SUN-EL MUSICIAN AFRO HOUSE SET | LIVE AT NATIVES</h3>
+                                    <p>NATIVES</p>
+                                    <p>135k views • 1 month ago</p>
+                                </div>
+                            </div>
                         </div>
+                    </a>
+                    <a href="https://youtu.be/So_8664o9oc?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                                <img src="https://i.ytimg.com/vi/So_8664o9oc/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYfyA2KDwwDw==&rs=AOn4CLCdz1HsZ1JTuwUAM2tLuvBWCpzuGw" alt="Video Thumbnail">
+                                <span class="duration">07:06</span>
+                            </div>
 
-                        <div class="video-info">
+                            <div class="video-info">
+                                <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-awakened-regal.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>Dj Maphorisa, Xduppy, Kabza De Small - Abantwana Bakho (Lyrics) ft. Thatohatsi,YoungStunna,Nkosazana</h3>
+                                <p>Awakened Regal</p>
+                                <p>8.5m views • 1 year ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                                <img src="https://i.ytimg.com/vi/ZK9vBMx3SQE/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjcbv6dZUyq1L8bbziSR_z4uSjFQ" alt="Video Thumbnail">
+                                <span class="duration">12:35</span>
+                            </div>
+
+                            <div class="video-info">
+                                <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-amanda-par.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>3-Step Afro House Groove | Sunset Vibes🌅☀️🏝️🌊</h3>
+                                <p>Amanda Par</p>
+                                <p>184k views • 5 months ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                                <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                                <span class="duration">8:01</span>
+                            </div>
+
+                            <div class="video-info">
+                                <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-programming-with-mosh.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/6cMBXdr6-Gc?si=pGMogrkcWBXeba0R" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                                <img src="https://i.ytimg.com/vi/6cMBXdr6-Gc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCI6PmNXMOnvSidApR6g540pHDpcg" alt="Video Thumbnail">
+                                <span class="duration">36:54</span>
+                            </div>
+
+                            <div class="video-info">
+                                <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-tech-with-nana.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>What Happens When You Don't Quit</h3>
+                                <p>Nana Janashia</p>
+                                <p>8.8k views • 1 month ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/X6Kw2_wZr1E?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                                <img src="https://i.ytimg.com/vi/X6Kw2_wZr1E/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDS7su899ScqVwDrmSC7zXpUy9Alw" alt="Video Thumbnail">
+                                <span class="duration">18:53</span>
+                            </div>
+
+                            <div class="video-info">
+                                <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-vishaka-sadhwani.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>5 RESUME PROJECTS For Cloud & DevOps Jobs [w/ GitHub Links!] | Vishakha Sadhwani</h3>
+                                <p>Vishakha Sadhwani</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
+
+                            <div class="video-info">
                             <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
                             <div class="video-meta">
-                                <h3>SUN-EL MUSICIAN AFRO HOUSE SET | LIVE AT NATIVES</h3>
-                                <p>NATIVES</p>
-                                <p>135k views • 1 month ago</p>
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
-                    <div class="video-card">
-                        <div class="thumbnail">
-                        <img src="https://i.ytimg.com/vi/DWiZvLlj5U8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCSEZR7KXMBL9QGrUxpGAOqpd7MDw" alt="Video Thumbnail">
-                        <span class="duration">12:35</span>
-                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
 
-                        <div class="video-info">
-                        <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
-                        <div class="video-meta">
-                            <h3>SUN-EL MUSICIAN AFRO HOUSE SET | LIVE AT NATIVES</h3>
-                            <p>NATIVES</p>
-                            <p>135k views • 1 month ago</p>
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
-                    <div class="video-card">
-                        <div class="thumbnail">
-                        <img src="https://i.ytimg.com/vi/DWiZvLlj5U8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCSEZR7KXMBL9QGrUxpGAOqpd7MDw" alt="Video Thumbnail">
-                        <span class="duration">12:35</span>
-                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
 
-                        <div class="video-info">
-                        <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
-                        <div class="video-meta">
-                            <h3>SUN-EL MUSICIAN AFRO HOUSE SET | LIVE AT NATIVES</h3>
-                            <p>NATIVES</p>
-                            <p>135k views • 1 month ago</p>
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
-                    <div class="video-card">
-                        <div class="thumbnail">
-                        <img src="https://i.ytimg.com/vi/DWiZvLlj5U8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCSEZR7KXMBL9QGrUxpGAOqpd7MDw" alt="Video Thumbnail">
-                        <span class="duration">12:35</span>
-                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
 
-                        <div class="video-info">
-                        <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
-                        <div class="video-meta">
-                            <h3>SUN-EL MUSICIAN AFRO HOUSE SET | LIVE AT NATIVES</h3>
-                            <p>NATIVES</p>
-                            <p>135k views • 1 month ago</p>
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
                         </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
+
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-                <div class="short-card">
-                    <div class="shorts-header">
-                        <div class="shorts-start">
-                            <img src="./assets/shorts-main.svg" alt="Shorts Icon">
-                            <h3>Shorts</h3>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
+
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="shorts-grid">
-                        <a href="https://youtube.com/shorts/xYh8-MEZWWQ?si=1a6SDj5lyyYhmn1O" target="_blank" rel="noopener noreferrer" class="video-link">
-                            <div class="short-video-card">
-                                <div class="short-thumbnail">
-                                    <img src="https://i.ytimg.com/vi/No52PO9A35k/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA2LY24dvXOk7KF2ddn-H1KHTDU1A&usqp=CCk" alt="Video Thumbnail">
-                                </div>
-                                <div class="short-video-info">
-                                    <h3>Limited Edition 4.2ltr. Bus T3 VW #automobile</h3>
-                                    <p>1.8m views</p>
-                                </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
                             </div>
-                        </a>
-                        <a href="https://youtube.com/shorts/xYh8-MEZWWQ?si=1a6SDj5lyyYhmn1O" target="_blank" rel="noopener noreferrer" class="video-link">
-                            <div class="short-video-card">
-                                <div class="short-thumbnail">
-                                    <img src="https://i.ytimg.com/vi/xYh8-MEZWWQ/oar3.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBvpucvcnDXf22bEewm5DOwg8mlOw&usqp=CCk" alt="Video Thumbnail">
-                                </div>
-                                <div class="short-video-info">
-                                    <h3>Tyla</h3>
-                                    <p>135k views</p>
-                                </div>
+
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
                             </div>
-                        </a>
-                        <a href="https://youtube.com/shorts/7xl016w7DwU?si=ZXwPdlF9MkYspelc" target="_blank" rel="noopener noreferrer" class="video-link">
-                            <div class="short-video-card">
-                                <div class="short-thumbnail">
-                                    <img src="https://i.ytimg.com/vi/7xl016w7DwU/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLChyp4fz8KJmMIrtcYRpnan8yh3wg&usqp=CCk" alt="Video Thumbnail">
-                                </div>
-                                <div class="short-video-info">
-                                    <h3>Mercedes Final Boss 600 Build: From Rusty Relic to 1,000HP Beast in Under 5 Months</h3>
-                                    <p>7m views</p>
-                                </div>
                             </div>
-                        </a>
-                        <a href="https://youtube.com/shorts/xYh8-MEZWWQ?si=1a6SDj5lyyYhmn1O" target="_blank" rel="noopener noreferrer" class="video-link">
-                            <div class="short-video-card">
-                                <div class="short-thumbnail">
-                                    <img src="https://i.ytimg.com/vi/xYh8-MEZWWQ/oar3.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBvpucvcnDXf22bEewm5DOwg8mlOw&usqp=CCk" alt="Video Thumbnail">
-                                </div>
-                                <div class="short-video-info">
-                                    <h3>Tyla</h3>
-                                    <p>135k views</p>
-                                </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
                             </div>
-                        </a>
-                    </div>
+
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
+
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
+
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
+
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/DWiZvLlj5U8?si=1eXJnCFh3DZ0kYiV" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <div class="video-card">
+                            <div class="thumbnail">
+                            <img src="https://i.ytimg.com/vi/6GQRb4fGvtk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCB3NzZ2woSuFSdWaiTxlKy2FlD1A" alt="Video Thumbnail">
+                            <span class="duration">8:01</span>
+                            </div>
+
+                            <div class="video-info">
+                            <img class="channel-avatar" src="./assets/channel-avatar/channel-avatar-sun-el.jpg" alt="Channel Avatar">
+                            <div class="video-meta">
+                                <h3>The Complete DevOps Roadmap</h3>
+                                <p>Programming with Mosh</p>
+                                <p>552k views • 1 year ago</p>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-        </main>
-
-    </body>
-</html>
+                    <div class="short-card">
+                        <div class="shorts-header">
+                            <div class="shorts-start">
+                                <img src="./assets/shorts-main.svg" alt="Shorts Icon">
+                                <h3>Shorts</h3>
+                            </div>
+                        </div>
+                        <div class="shorts-grid">
+                            <a href="https://youtube.com/shorts/xYh8-MEZWWQ?si=1a6SDj5lyyYhmn1O" target="_blank" rel="noopener noreferrer" class="video-link">
+                                <div class="short-video-card">
+                                    <div class="short-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/No52PO9A35k/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA2LY24dvXOk7KF2ddn-H1KHTDU1A&usqp=CCk" alt="Video Thumbnail">
+                                    </div>
+                                    <div class="short-video-info">
+                                        <h3>Limited Edition 4.2ltr. Bus T3 VW #automobile</h3>
+                                        <p>1.8m views</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://youtube.com/shorts/xYh8-MEZWWQ?si=1a6SDj5lyyYhmn1O" target="_blank" rel="noopener noreferrer" class="video-link">
+                                <div class="short-video-card">
+                                    <div class="short-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/xYh8-MEZWWQ/oar3.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBvpucvcnDXf22bEewm5DOwg8mlOw&usqp=CCk" alt="Video Thumbnail">
+                                    </div>
+                                    <div class="short-video-info">
+                                        <h3>Tyla</h3>
+                                        <p>135k views</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://youtube.com/shorts/7xl016w7DwU?si=ZXwPdlF9MkYspelc" target="_blank" rel="noopener noreferrer" class="video-link">
+                                <div class="short-video-card">
+                                    <div class="short-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/7xl016w7DwU/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLChyp4fz8KJmMIrtcYRpnan8yh3wg&usqp=CCk" alt="Video Thumbnail">
+                                    </div>
+                                    <div class="short-video-info">
+                                        <h3>Mercedes Final Boss 600 Build: From Rusty Relic to 1,000HP Beast in Under 5 Months</h3>
+                                        <p>7m views</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://youtube.com/shorts/XjTveL-cRHo?si=J2ggGUs1riUSQh-U" target="_blank" rel="noopener noreferrer" class="video-link">
+                                <div class="short-video-card">
+                                    <div class="short-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/XjTveL-cRHo/oardefault.jpg?usqp=CCk" alt="Video Thumbnail">
+                                    </div>
+                                    <div class="short-video-info">
+                                        <h3>#foryou #dance #funny #shorts</h3>
+                                        <p>3.5m views</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://youtube.com/shorts/6w_BSxD01sI?si=iKrcFg6jrkqXawK1" target="_blank" rel="noopener noreferrer" class="video-link">
+                                <div class="short-video-card">
+                                    <div class="short-thumbnail">
+                                        <img src="https://i.ytimg.com/vi/6w_BSxD01sI/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC8PIX1FM7Ce6e3c1gQy2FyyJ1bXQ&usqp=CCk" alt="Video Thumbnail">
+                                    </div>
+                                    <div class="short-video-info">
+                                        <h3>Beautiful Audi RS6 Avant!!! #audi #audirs6avant #rs6 #german #cars #carmeet #viralvideo #ytshorts</h3>
+                                        <p>2.3m views</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            </main>
+        </body>
+    </html>
