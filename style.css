@@ -525,6 +525,12 @@ main {
 
     #search-bar input {
         font-size: 14px;
+        display: none;
+    }
+
+    #search-bar button:first-of-type {
+        width: 40px;
+        border-radius: 100%;
     }
 
     .filter-bar {
