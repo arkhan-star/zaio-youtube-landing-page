@@ -558,4 +558,112 @@ main {
 
 /* Manual and AI Generated Feature */
 
+.dark-toggle-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
+.dark-toggle-btn:hover {
+    background: rgba(0,0,0,0.08);
+}
+
+.dark-toggle-btn .material-symbols-outlined {
+    font-size: 25px;
+}
+
+#dark-toggle:checked ~ nav,
+#dark-toggle:checked ~ .filter-bar,
+#dark-toggle:checked ~ .aside,
+#dark-toggle:checked ~ main {
+    background: #0f0f0f;
+    color: white;
+}
+
+#dark-toggle:checked ~ nav {
+    background: #0f0f0f;
+}
+
+#dark-toggle:checked ~ .aside {
+    background: #0f0f0f;
+}
+
+#dark-toggle:checked ~ .filter-bar {
+    background: #0f0f0f;
+}
+
+#dark-toggle:checked ~ main {
+    background: #0f0f0f;
+}
+
+#dark-toggle:checked ~ .filter-bar button {
+    background: #272727;
+    color: white;
+}
+
+#dark-toggle:checked ~ .aside-item {
+    color: white;
+}
+
+#dark-toggle:checked ~ .aside-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+#dark-toggle:checked ~ main .video-meta p {
+    color: #aaa;
+}
+
+#dark-toggle:checked ~ nav img[src$=".svg"]:not(.no-invert),
+#dark-toggle:checked ~ .aside img[src$=".svg"]:not(.no-invert){
+    filter: invert(1);
+}
+
+#dark-toggle:checked ~ nav #search-bar input {
+    background: #272727;
+    color: white;
+    border-color: rgba(255,255,255,0.15);
+}
+
+#dark-toggle:checked ~ .aside .button-group span {
+    color: white;
+}
+
+#dark-toggle:checked ~ .aside .button-group h2 {
+    color: white;
+}
+
+#dark-toggle:checked ~ .aside .button-group a {
+    color: white;
+}
+
+#dark-toggle:checked ~ .aside .button-group a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+#dark-toggle:checked ~ nav #search-bar button:first-of-type {
+    background: #272727;
+    border-color: rgba(255,255,255,0.15);
+}
+
+#dark-toggle:checked ~ nav #search-bar button:last-of-type {
+    background: #272727;
+    border-color: rgba(255,255,255,0.15);
+}
+
+#dark-toggle:checked ~ nav #create {
+    background: #272727;
+    border-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+#dark-toggle:checked ~ nav #bell {
+    background: rgb(39,39,39);
+}
+
+#dark-toggle:checked ~ nav .nav-left button {
+    background: rgb(39,39,39);
+}

@@ -14,10 +14,11 @@
 
     </head>
         <body>
+            <input type="checkbox" id="dark-toggle" hidden>
             <nav>
                 <div class="nav-left">
                     <button><img src="./assets/menu.svg" alt="Menu Icon"></button>
-                    <a href="https://www.youtube.com/" class="logo"><img src="./assets/logo.svg" alt="Youtube Africa Logo"></a>
+                    <a href="https://www.youtube.com/" class="logo"><img src="./assets/logo.svg" class="no-invert" alt="Youtube Africa Logo"></a>
                 </div>
                 <div class="nav-centre">
                     <div id="search-bar">
@@ -29,6 +30,9 @@
                 <div class="nav-right">
                     <button id="create"><img src="./assets/plus.svg" alt="Create"> Create</button>
                     <button id="bell"><img src="./assets/bell.svg" alt="Notifications Bell Icon"><span class="badge">9+</span></button>
+                        <label for="dark-toggle" class="dark-toggle-btn">
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </label>
                     <a href="https://accounts.google.com/" id="avatar"><img src="./assets/profile.jpg" alt="User Profile Icon"></a>
                 </div>
             </nav>
@@ -148,15 +152,15 @@
                     <section class="button-group">
                         <h2>More from YouTube</h2>
                         <a href="https://studio.youtube.com/" class="aside-item">
-                            <img src="./assets/yt-studio.svg" alt="Youtube Studio Icon">
+                            <img src="./assets/yt-studio.svg" class="no-invert" alt="Youtube Studio Icon">
                             <span>Youtube Studio</span>
                         </a>
                         <a href="https://music.youtube.com/" class="aside-item">
-                            <img src="./assets/yt-music.svg" alt="Youtube Music Icon">
+                            <img src="./assets/yt-music.svg" class="no-invert" alt="Youtube Music Icon">
                             <span>Youtube Music</span>
                         </a>
                         <a href="https://www.youtubekids.com/?source=youtube_web" class="aside-item">
-                            <img src="./assets/yt-kids.svg" alt="Youtube Kids Icon">
+                            <img src="./assets/yt-kids.svg" class="no-invert" alt="Youtube Kids Icon">
                             <span>Youtube Kids</span>
                         </a>
                     </section>
