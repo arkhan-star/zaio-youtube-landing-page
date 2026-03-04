@@ -1,4 +1,4 @@
-:root{ /* It was better to create CSS variables for the dimensions used in the layout to make it easier to maintain and update the styles in the future. */
+:root   { /* It was better to create CSS variables for the dimensions used in the layout to make it easier to maintain and update the styles in the future. */
   --nav-h: 56px;
   --chips-h: 56px;
   --sidebar-w: 239px;
@@ -84,7 +84,7 @@ nav {
     border: 1px solid rgba(0,0,0,0.15);
     border-left: none;
     border-radius: 0 20px 20px 0;
-    background: #f8f8f8;
+    background: rgb(248,248,248);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@ nav {
     height: 40px;
     border: none;
     border-radius: 50%;
-    background: #f2f2f2;
+    background: rgb(242,242,242);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@ nav {
     padding: 0 16px;
     border: 1px solid rgba(0,0,0,0.1) ;
     border-radius: 18px;
-    background: #f2f2f2 ;
+    background: rgb(242,242,242);
     font-size: 14px;
     font-weight: 500;
     white-space: nowrap;
@@ -555,3 +555,7 @@ main {
         flex: 1 1 100%; /* Make short video cards take full width on mobile */
     }
 }
+
+/* Manual and AI Generated Feature */
+
+
